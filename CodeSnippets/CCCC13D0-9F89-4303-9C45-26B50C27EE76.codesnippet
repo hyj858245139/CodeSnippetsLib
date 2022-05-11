@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tableView lazy</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITableView *)titleBarTableView {
+    if (!_titleBarTableView) {
+        _titleBarTableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+        _titleBarTableView.delegate = self;
+        _titleBarTableView.dataSource = self;
+        _titleBarTableView.backgroundColor = [UIColor clearColor];
+        _titleBarTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _titleBarTableView.estimatedRowHeight = 0;
+        _titleBarTableView.estimatedSectionFooterHeight = 0;
+        _titleBarTableView.estimatedSectionHeaderHeight = 0;
+        [_titleBarTableView registerClass:&lt;#(nullable Class)#&gt; forCellReuseIdentifier:&lt;#(nonnull NSString *)#&gt;];
+    }
+    return _titleBarTableView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CCCC13D0-9F89-4303-9C45-26B50C27EE76</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>快速初始化 tableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
